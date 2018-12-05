@@ -22,8 +22,18 @@ url: "https://chandlery.netlify.com/" # the base hostname & protocol for your si
 # Build settings
 markdown: kramdown
 theme: wax_theme
-plugins:
-  - jekyll-feed
+
+collections:
+  exhibits:
+    output: true
+  wedding:
+    output: true
+    #layout: 'qatar_item'
+    metadata:
+      source: 'wedding.yml' # path to the metadata file within `_data`
+    images:
+      source: 'raw_images/wedding' # path to the directory of images within `_data`
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
