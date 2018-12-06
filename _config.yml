@@ -47,3 +47,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - bin/
+
+include:
+  - _headers
