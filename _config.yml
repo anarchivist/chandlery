@@ -38,6 +38,17 @@ collections:
     # lunr_index:
     #   content: false
     #   fields: [label, photographer, location]
+  test:
+    output: true
+    layout: 'test_item'
+    metadata:
+      source: 'test.yml' # path to the metadata file within `_data`
+    images:
+      source: 'raw_images/test' # path to the directory of images within `_data`
+      iiif:
+        label: label
+        attribution: attribution
+        license: license
 
 include:
   - _headers
