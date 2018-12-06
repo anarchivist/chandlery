@@ -24,8 +24,6 @@ markdown: kramdown
 theme: wax_theme
 
 collections:
-  exhibits:
-    output: true
   wedding:
     output: true
     layout: 'wedding_item'
@@ -33,11 +31,17 @@ collections:
       source: 'wedding.yml' # path to the metadata file within `_data`
     images:
       source: 'raw_images/wedding' # path to the directory of images within `_data`
+      iiif:
+        label: label
+        attribution: attribution
+        license: license
+    # lunr_index:
+    #   content: false
+    #   fields: [label, photographer, location]
 
+include:
+  - _headers
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -47,6 +51,3 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - bin/
-
-include:
-  - _headers
