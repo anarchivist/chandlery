@@ -1,4 +1,11 @@
 ---
+- pid: MaryKalhorPhotography_150_0010
+  photographer: Mary Kahlor
+  location: Seattle, Washington
+  label: Who's Chelsea?
+  _date: 2016-08-13
+  license: http://rightsstatements.org/vocab/InC/1.0/
+  attribution: "© Mary Kahlor"
 - pid: MaryKalhorPhotography_392_0032
   photographer: Mary Kahlor
   location: Seattle, Washington
